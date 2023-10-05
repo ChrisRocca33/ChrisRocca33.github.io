@@ -1,0 +1,191 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Caramel', cursive;
+    list-style: none;
+    text-decoration: none;
+}
+header {
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 10%;
+    background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;;
+}
+body {
+    background: url("../images/kitchen.jpg") no-repeat;
+    background-size:cover;
+    align-items: center;
+    display: flex;
+    min-height: 100vh;
+}
+.logo {
+    font-size: 70px;
+    font-weight: 300;
+    color: rgb(0, 0, 0);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(95, 95, 95);
+}
+.navlist {
+    display: flex;
+}
+.navlist a {
+    color: rgb(0, 0, 0);
+    margin-left: 60px;
+    font-size: 40px;
+    font-weight: 300;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(95, 95, 95);
+    border-bottom: 2px solid transparent;
+    transition: all .55s ease;
+}
+.navlist a:hover {
+    border-bottom: 2px solid rgb(0, 0, 0);
+}
+.navlist a.active {
+    -webkit-text-stroke-width: .75px;
+    -webkit-text-stroke-color: rgb(150, 0, 0);
+}
+#menu-icon {
+    color: rgb(0, 0, 0);
+    font-size: 50px;
+    z-index: 10001;
+    cursor: pointer;
+    display: none;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(150, 0, 0);
+}
+.moto {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff;
+
+}
+
+.moto-text h1 {
+    font-size: 70px;
+    font-weight: 300;
+    color: rgb(0, 0, 0);
+    margin-bottom: 40px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(95, 95, 95);
+}
+.moto-text a {
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(0, 0, 0);
+    background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;;
+    border: 1px solid transparent;
+    padding: 12px 100px;
+    line-height: 1.4;
+    font-size: 30px;
+    font-weight: 150;
+    border-radius: 30px;
+    text-transform: uppercase;
+    transition: all .55s ease;
+    box-shadow: rgb(150, 0, 0) 1px 2px ;
+}
+.moto-text a:hover {
+    background: transparent;
+    border: 1px solid white;
+    transform: translateX(10px);
+}
+@media (max-width: 1535px) {
+    header {
+        padding: 15px 3%;
+        transition: .2s;  
+    }
+}
+@media (max-width: 1460px) {
+    section {
+        padding: 0 12%;
+        transition: .2s;     
+    }
+}
+@media (max-width: 1135px) {
+    section {
+        padding: 0 3%;
+        transition: .2s;
+    }
+    .moto-text {
+        padding-top: 115px;
+    }
+}
+@media (max-width: 990px) {
+    #menu-icon {
+        display: block;
+    }
+    .navlist {
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        height: 100vh;
+        width: 100%;
+        background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 20px 20px;
+        transition: all .55s ease;
+        
+    }
+    .navlist a {
+        margin-left: 0;
+        display: block;  
+        margin: 10px 0;
+        font-size: 60px;
+        line-height: 100px;
+    }
+    .navlist.active {
+        right: 0;
+    }
+}
+@media (max-width: 480px) {
+    .logo {
+        font-size: 40px;
+    }
+    .moto-text h1 {
+        font-size: 70px;
+    }
+    .moto-text a {
+        padding: 12px 60px;
+        font-size: 20px;
+    }
+    #menu-icon {
+        display: block;
+    }
+    .navlist {
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        height: 100vh;
+        width: 100%;
+        background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 20px 20px;
+        transition: all .55s ease;
+    }
+    .navlist a {
+        margin-left: 0;
+        display: block;  
+        margin: 10px 0;
+        font-size: 60px;
+        line-height: 100px;
+    }
+    .navlist.active {
+        right: 0;
+    }
+}
+
