@@ -18,15 +18,20 @@ header {
     padding: 30px 10%;
     background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;;
 }
-
+body {
+    background: url("../images/new.jpg") no-repeat;
+    background-size:cover;
+    align-items: center;
+    display: flex;
+    min-height: 100vh;
+}
 .logo {
     font-size: 70px;
-    font-weight: 100;
+    font-weight: 400;
     color: rgb(0, 0, 0);
     -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: rgb(108, 185, 159);
+    -webkit-text-stroke-color: rgb(156, 0, 0);
 }
-/*Nav bar css*/
 .navlist {
     display: flex;
 }
@@ -41,11 +46,11 @@ header {
     transition: all .55s ease;
 }
 .navlist a:hover {
-    border-bottom: 2px solid rgb(108, 185, 159);
+    border-bottom: 2px solid rgb(150, 0, 0);
 }
 .navlist a.active {
     -webkit-text-stroke-width: .75px;
-    -webkit-text-stroke-color: rgb(108, 185, 159);
+    -webkit-text-stroke-color: rgb(150, 0, 0);
 }
 #menu-icon {
     color: rgb(0, 0, 0);
@@ -54,56 +59,8 @@ header {
     cursor: pointer;
     display: none;
     -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: rgb(108, 185, 159);
+    -webkit-text-stroke-color: rgb(150, 0, 0);
 }
-/*Moto/home Section  css*/
-.moto {
-    background: url("../images/kitchen.jpg") no-repeat;
-    background-size:cover;
-    align-items: center;
-    display: flex;
-    min-height: 100vh;
-}
-.moto-text {
-    width: 100%;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    text-align: center;
-    color: #fff;
-
-}
-
-.moto-text h1 {
-    font-size: 70px;
-    font-weight: 300;
-    color: rgb(0, 0, 0);
-    margin-bottom: 40px;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: rgb(108, 185, 159);
-}
-.moto-text a {
-    display: inline-block;
-    color: rgb(255, 255, 255);
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: rgb(0, 0, 0);
-    background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;;
-    border: 1px solid transparent;
-    padding: 12px 100px;
-    line-height: 1.4;
-    font-size: 30px;
-    font-weight: 150;
-    border-radius: 30px;
-    text-transform: uppercase;
-    transition: all .55s ease;
-    box-shadow:  rgb(108, 185, 159) 2px 2px;
-}
-.moto-text a:hover {
-    background: transparent;
-    border: 1px solid white;
-    transform: translateX(10px);
-}
-/*Media resizing css*/
 @media (max-width: 1535px) {
     header {
         padding: 15px 3%;
@@ -165,6 +122,9 @@ header {
         padding: 12px 60px;
         font-size: 20px;
     }
+    .sevices.h3 {
+        font-size: 4px;
+    }
     #menu-icon {
         display: block;
     }
@@ -192,91 +152,91 @@ header {
         right: 0;
     }
 }
+.services {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 60px;
 
-/* Service section css */
-.service {
-    height: 100%;
-    width: 100%;
-    min-height: 100vh;
-    background:linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;;;
-    position: relative;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
-    gap: 2rem;
 }
-section.service {
-    padding: 0px 14%;
-    text-align: center;
-    padding-top: 5%;
-}
-.service-text h3 {
-    font-size: 60px;
+h1 {
+    padding-top: 60px;
+    color: rgb(0, 0, 0);
+    font-size: 70px;
     font-weight: 100;
-    margin-bottom: 40px;
-    text-align: center;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(156, 0, 0);
 }
-.service-text p {
+ p {
+    color: black;
     font-size: 20px;
     font-weight: 25;
-    margin-bottom: 10px;
+    line-height: 22px;
+    padding: 10px;
     font-family: 'Young Serif', serif;
     font-style: italic;
-    color: #ffffff;
-    text-align: center;
 }
 
-.service-text a {
+ .services a {
     display: inline-block;
     color: rgb(255, 255, 255);
     -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: rgb(0, 0, 0);
+    -webkit-text-stroke-color: rgb(150, 0, 0);
     background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;;
     border: 1px solid transparent;
-    padding: 12px 60px;
+    padding: 12px 40px;
     line-height: 1.4;
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 150;
     border-radius: 30px;
     text-transform: uppercase;
     transition: all .55s ease;
-    box-shadow: rgb(108, 185, 159)  1px 2px ;
+    box-shadow: rgb(150, 0, 0) 1px 2px ;
     font-family: 'Young Serif', serif;
     font-style: italic;
+    
 }
-.service-text a:hover {
+.services a:hover {
     background: transparent;
     border: 1px solid white;
     transform: translateX(10px);
 }
-.clean-img img {
-    width: auto;
-    height: 500px;
-    box-shadow: 0 0 20px 0 rgba(108,185,159,0.85);
-    border-radius: 20px;
-}
-@media(max-width:1340px ) {
-    .clean-img img {
-        width: auto;
-        height: 300px;
-        
-    }
-}
-@media(max-width:1180px ) {
-    .clean-img img {
-        width: auto;
-        height: 300px;    
-    }
-    .service {
-        height: 100%;
-        gap: 1rem;
-        grid-template-columns: 1fr;
-    }
-}
-@media(max-width:670px ) {
-    .clean-img img {
-        width: auto;
-        height: 200px;    
-    }
+.row {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
     
+    
+}
+.service-col {
+    flex-basis: 31%;
+    background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    opacity: 90%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+h3 {
+    text-align: center;
+    font-weight: 10;
+    margin: 10px 0;
+    font-size: 45px;
+    color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(150, 0, 0);
+}
+.service-col:hover {
+    box-shadow: 0 0 20px 0 rgba(150,0,0,0.75);
+}
+@media(max-width: 950px) {
+    .row {
+        flex-direction: column;
+    }
+}
+@media(max-width: 700px) {
+    .row {
+        flex-direction: column;
+    }
 }
